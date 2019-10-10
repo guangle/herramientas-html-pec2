@@ -32,5 +32,12 @@
   "bugs": {
     "url": "https://github.com/guangle/herramientas-html-pec1/issues"
   },
-  "homepage": "https://github.com/guangle/herramientas-html-pec1#readme"
+  "homepage": "https://github.com/guangle/herramientas-html-pec1#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "bootstrap": "^4.3.1",
+    "css": "^2.2.4",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0"
+  }
 }
