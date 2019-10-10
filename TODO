@@ -1,0 +1,19 @@
+WEB responsive
+
+fontawesome
+bootstrap?
+
+-Una página de portada
+-2 páginas de categorias: Module Bundlers y Preprocesadores
+- Páginas de detalle, con formato artículo
+
+ * Interactividd con Javascript *
+
+ Compilar para producción -> npm run build
+
+ Documentación
+    Proceso construcción
+    url pública
+    Decisiones de diseño
+    Proceso de publicación
+

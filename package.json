@@ -1,0 +1,36 @@
+{
+  "name": "pec1",
+  "version": "1.0.0",
+  "description": "PEC1 Para la asignatura Herramientas Html y Css",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
+    "clean": "rimraf dist .cache .cache-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guangle/herramientas-html-pec1.git"
+  },
+  "keywords": [
+    "pec1",
+    "uoc",
+    "html",
+    "css",
+    "parcel"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^9.6.4",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.3",
+    "rimraf": "^3.0.0"
+  },
+  "author": "Juan Jesús Gutiérrez Ramos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guangle/herramientas-html-pec1/issues"
+  },
+  "homepage": "https://github.com/guangle/herramientas-html-pec1#readme"
+}
