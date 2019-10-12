@@ -1,3 +1,65 @@
-body {
+* {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+}
 
+body {
+  background-color: #fffffa;
+}
+
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.imagen_fondo {
+  /* The image used */
+  background-image: url("/img/front.png");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.contenedor_titulo_principal {
+  /*margin-top: 150px;*/
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 30px;
+  background: #fffffa;
+  border: 5px solid;
+  border-image: linear-gradient(
+      to right,
+      #47555d 20%,
+      #d62828 20%,
+      #d62828 40%,
+      #f77f00 40%,
+      #f77f00 60%,
+      #fcbf49 60%,
+      #fcbf49 80%,
+      #fffffa 80%
+    )
+    5;
+}
+
+.span_titulo_1 {
+  display: block;
+  font-size: 2em;
+}
+
+.span_titulo_2 {
+  display: block;
+  font-size: 1.6em;
 }

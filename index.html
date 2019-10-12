@@ -19,45 +19,26 @@
     />
 
     <style>
-      body, html {
+      body,
+      html {
         height: 100%;
         margin: 0;
       }
-      
-      .bg {
-        /* The image used */
-        background-image: url("./img/front.png");
-      
-        /* Full height */
-        height: 100%; 
-      
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        opacity: 0.5;
-        filter: alpha(opacity=50); /* For IE8 and earlier */
-      }
-      </style>
-
+    </style>
   </head>
   <body>
-    <div class="bg"></div>
-
-    <p>This example creates a full page background image. Try to resize the browser window to see how it always will cover the full screen (when scrolled to top), and that it scales nicely on all screen sizes.</p>
+    <div class="imagen_fondo">
+      <div class="contenedor_titulo_principal ">
+        <div class="text-center">
+          <span class="span_titulo_1">Herramientas Front-End</span>
+          <span class="span_titulo_2">Para Dummies</span>
+        </div>
+      </div>
+    </div>
 
     <div class="row">
-      <a class="btn btn-danger">Bootstrap?</a>
+      <div class="col-10 offset-md-1">uno</div>
     </div>
-
-    <div>
-      -2 páginas de categorias: Module Bundlers y Preprocesadores - Páginas de
-      detalle, con formato artículo
-      <a href="categoria_module_bundlers.html">Module bundlers</a>
-      <a href="categoria_preprocesadores.html">Preprocesadores</a>
-    </div>
-
     <script src="./index.js"></script>
   </body>
 </html>
