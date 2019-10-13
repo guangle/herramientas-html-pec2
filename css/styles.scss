@@ -1,6 +1,17 @@
 @import "paleta.scss";
 @import "animaciones.scss";
 
+//Antes de importar bootstrap, redefinimos alguno
+//de los colores que tiene por defecto
+//https://stackoverflow.com/questions/38792005/how-to-change-the-bootstrap-primary-color
+
+$theme-colors: (
+  primary: $color2
+);
+
+//importamos los scss de bootstrap
+@import "~bootstrap/scss/bootstrap";
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +31,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.5;
   filter: alpha(opacity=50);
 }
 .contenedor_titulo_principal {
