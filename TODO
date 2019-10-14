@@ -1,7 +1,7 @@
 WEB responsive
 
-fontawesome ***
-bootstrap? ****
+fontawesome
+bootstrap?
 
 -Una página de portada
 -2 páginas de categorias: Module Bundlers y Preprocesadores
@@ -17,24 +17,5 @@ bootstrap? ****
     Decisiones de diseño
     Proceso de publicación
 
------
-Página inicial -> una imagen de fondo ***
-mb -> cabecera **
-pre -> cabecera **
-
-boceto **
-boeceto de documenacion **
-refact x10
-scss _ _ _
-animacion imagen principal
-
-
---------------
-Pueblo Vero
---------------
-camino de migas _ _
-
-
-Documentación
--------------------
-Crear una página con una única imagen
+Instalo bootstrap siguientdo
+https://en.parceljs.org/recipes.html
