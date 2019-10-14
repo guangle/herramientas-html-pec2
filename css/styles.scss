@@ -1,10 +1,10 @@
 @import "paleta.scss";
 @import "animaciones.scss";
 
+@import "@fortawesome/fontawesome-free/css/all.css";
 //Antes de importar bootstrap, redefinimos alguno
 //de los colores que tiene por defecto
 //https://stackoverflow.com/questions/38792005/how-to-change-the-bootstrap-primary-color
-
 $theme-colors: (
   primary: $color2
 );
