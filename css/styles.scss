@@ -1,12 +1,15 @@
+//styles.css es el fichero de estilos principal de la aplicacion, importamos los otros scss
+
 @import "paleta.scss";
 @import "animaciones.scss";
-
 @import "@fortawesome/fontawesome-free/css/all.css";
+
 //Antes de importar bootstrap, redefinimos alguno
 //de los colores que tiene por defecto
 //https://stackoverflow.com/questions/38792005/how-to-change-the-bootstrap-primary-color
 $theme-colors: (
-  primary: $color2
+  primary: $color2,
+  dark : $color4
 );
 
 //importamos los scss de bootstrap
@@ -34,7 +37,6 @@ $theme-colors: (
   filter: alpha(opacity=50);
 }
 .contenedor_titulo_principal {
-  /*margin-top: 150px;*/
   position: absolute;
   top: 30%;
   left: 50%;

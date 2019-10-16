@@ -1,10 +1,2 @@
-/*
-import "bootstrap";
-// Import precompiled Bootstrap css
-//import "bootstrap/dist/css/bootstrap.css";
-import "@fortawesome/fontawesome-free/css/all.css";
-
-import "/css/styles.scss";
-*/
-
-console.log("Inicio.");
+console.log("Herramientas front-end para dummies:");
+console.log("Inicio de la aplicacion.");
