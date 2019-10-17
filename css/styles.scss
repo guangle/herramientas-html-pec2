@@ -87,3 +87,30 @@ $theme-colors: (
   );
   height: 6px;
 }
+
+footer {
+  margin-top: 20px;
+}
+
+.info_footer {
+  padding: 10px 0px;
+}
+
+.info_footer span{
+  color: $color3;
+}
+
+.contenedor_rrss {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: center;
+}
+
+
+.contenedor_rrss i {
+  color:$color2;
+  padding: 0px 8px;
+}
