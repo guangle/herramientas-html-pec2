@@ -114,3 +114,18 @@ footer {
   color:$color2;
   padding: 0px 8px;
 }
+
+.row_contenido {
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+.row_contenido h2{
+  display: block;
+}
+
+.migas_pan , .breadcrumb {
+  background-color: $color3;
+  margin: 0;
+  padding: 10px 30px;
+}
