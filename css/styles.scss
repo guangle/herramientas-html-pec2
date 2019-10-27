@@ -9,7 +9,7 @@
 //https://stackoverflow.com/questions/38792005/how-to-change-the-bootstrap-primary-color
 $theme-colors: (
   primary: $color2,
-  dark : $color4
+  dark: $color4
 );
 
 //importamos los scss de bootstrap
@@ -20,7 +20,8 @@ $theme-colors: (
   padding: 0;
   color: #000000;
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .row {
@@ -96,22 +97,21 @@ footer {
   padding: 10px 0px;
 }
 
-.info_footer span{
+.info_footer span {
   color: $color3;
 }
 
 .contenedor_rrss {
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
 }
 
-
 .contenedor_rrss i {
-  color:$color2;
+  color: $color2;
   padding: 0px 8px;
 }
 
@@ -120,12 +120,55 @@ footer {
   margin-top: 20px;
 }
 
-.row_contenido h2{
+.row_contenido h2 {
   display: block;
 }
 
-.migas_pan , .breadcrumb {
+.migas_pan,
+.breadcrumb {
   background-color: $color3;
   margin: 0;
   padding: 10px 30px;
+}
+
+.parrafo_intro {
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+p {
+  text-align: justify;
+}
+
+p::first-letter {
+  font-size: 250%;
+  color: $color1;
+  font-weight: bold;
+}
+
+.span_destacado {
+  font-weight: bold;
+  border-bottom: 3px solid $color5;
+  display: inline-block;
+  line-height: 0.85;
+  text-shadow: 4px -4px 3px $color5;
+}
+
+ul.ul_categoria {
+  list-style-type: none;
+}
+
+ul.ul_categoria > li {
+  margin: 1em 0;
+}
+
+.span_li {
+  font-size: 1.6em;
+  color: $color1;
+}
+
+.span_li_descripcion {
+  font-style: italic;
+  font-size: 0.8em;
 }

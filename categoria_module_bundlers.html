@@ -23,6 +23,7 @@
       media="screen"
       href="css/styles.scss"
     />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -51,33 +52,99 @@
         </ol>
       </nav>
     </div>
-    <div class="row header_seccion row_contenido">
+    <div class="row row_contenido">
       <div class="col-lg-4 col-sm-12">
-        AQUI UNA FOTO
+          <img src="img/js-tools.jpg" height="100%" width="100%" class="rounded" 
+            alt="Javascript module boundlers - una herramienta esencial para construir proyectos">
       </div>
       <div class="col-lg-8 col-sm-12">
-        aQUI UN TEXTO <a href="#">Quiero saber más</a>
+        <p class="parrafo_intro" >
+          Los <span class="span_destacado">module boundlers</span> son herramientas que nos harán la vida mucho más fácil durante el proceso de construcción y despliegue de una aplicación web moderna, ya que consiguen automatizar una serie de tareas comunes que hay que hacer en todos los desarrollos y, sobre todo, gestionar las dependencias del proyecto. Una página web no es un único fichero ¡ni mucho menos! más bien son algunos ficheros de con el contenido html, otros donde escribimos los estilos y otros en los que escribimos el comportamiento de la aplicación. Los ficheros de cada uno de estos grupos pueden estar escrito en diferentes formatos o lenguajes. Además, afortunadamente, cuando escribiemos una web no lo hacemos todo desde cero, sino que nos basamos en librerías, herramientas de terceros, frameworks con estilos.. 
+        </p>
+        <p class="parrafo_intro" >
+            Todo esto tiene como resultado que un proyecto web puede tener cientos de ficheros, o modulos, que están escritos en diferentes lenguajes y que dependen unos de otros. Para gestionar todo este embrollo están los module boundlers, que 'traducirán' cada fichero a un formato que entienda el navegador y sabrá ordenadar todos los módulos de nuestro proyecto para que se resuelvan las dependencias de forma adecuada. 
+            <a href="#">Quiero saber más</a>
+        </p>
       </div>
+    </div>
+    <div class="row row_contenido">
+        <div class="col-lg-12 col-sm-12">
+          Ejemplos scss + minificacion . y typescript
+        </div>
+    </div>
+    <div class="row row_contenido">
+        <div class="col-lg-12 col-sm-12">
+            <p class="parrafo_intro" >
+          Como sabrás, una web no se escribe directamente en el entorno real o de <span class="span_destacado">producción</span>, sino que durante el proceso de construcción los desarrolladores prueban sus cambios y el contenido que van escribiendo en un <span class="span_destacado">entorno de desarrollo</span>. Generalmente, un module boundler realiza una serie de tareas u otras en función del entorno para el cual este trabajando. En el entorno de desarrollo el objetivo principal es hacerle fácil la vida al desarrollador: ofreciendo un entorno de desarrollo, mostrando mensajes de error fáciles de entender, aplicando los cambios en la página cuando se re-escriban ficheros, etc. Por el contrario, la premisa principal cuando se contruye una web para el entorno de producción es que la web funcione de la forma más rápida posible. Para ello, los module boundler aplican procesos de concatenación, minificación de ficheros y optimización de imágenes y recursos estáticos.
+          </p> 
+        </div>
     </div>
     <div class="row row_contenido">
       <h2>Listado</h2>
       <div class="col-lg-12 col-sm-12">
-        <ul>
-          <li>
-            WebPack <a href="webpack.html">Webpack</a>
+          <small>Aunque hay decenas de alternativas, a continuación se listan los dos module boundlers más populares en el mundo JS</small>
+        <ul class="list-group ul_categoria" >
+          <li class="list-group-item" >
+              <i class="fas fa-cube"></i> 
+              <span class="span_li" >WebPack</span> 
+              <span class="span_li_descripcion"> El module boundler mas completo.. el más usuado en la comunidad Javascript ¡Pero uno de los más difícils de aprender! </span>
+              <a href="webpack.html">Aprender webpack</a>
           </li>
-          <li>
-            Parcel <a href="parcel.html">Parcel</a>
+          <li class="list-group-item" >
+              <i class="fas fa-cube"></i> 
+              <span class="span_li" >Parcel</span> 
+              <span class="span_li_descripcion"> Potente y casi sin configuración.. la herramienta perfecta para empezar con module boundlers </span>
+              <a href="parcel.html">Aprender Parcel</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="row row_contenido">
-      <h2>¿Qué has aprendido?</h2>
-      <div>pregunta n</div>
-      <div>pregunta n</div>
-      <div>pregunta n</div>
-      <div>pregunta n</div>
+        <div class="col-lg-12 col-sm-12">
+            <h2>¿Qué has aprendido?</h2>
+            <small>Pon a pruebas tus conocimientos con estos test</small>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    La minificación es un proceso que se suele hacer para el entorno de..
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item respuesta" es-correcta="1" > Producción </li>
+                    <li class="list-group-item respuesta" es-correcta="0" > Desarrollo </li>
+                    <li class="list-group-item respuesta" es-correcta="0" > Ambos </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    Usando un module boundler..
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item respuesta" es-correcta="0" > Nuestra web será más lenta en el entorno de producción </li>
+                    <li class="list-group-item respuesta" es-correcta="0" > Nos obliga a escribir en scss y typescript </li>
+                    <li class="list-group-item respuesta" es-correcta="1" > Disponemos de un conjunto de herramientas para problemas comunes en el desarrollo web moderno </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="card" style="width: 18rem;">
+                <div class="card-header">
+                    WebPack es el module boundler más fácil de configurar
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item respuesta" es-correcta="0" > Verdadero </li>
+                    <li class="list-group-item respuesta" es-correcta="1" > Falso </li>
+                    <li class="list-group-item respuesta" es-correcta="0" > WebPack no es un module boundler </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
     <footer class="bg-dark text-center" >
         <div class="info_footer" >
