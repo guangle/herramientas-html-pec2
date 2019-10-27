@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>
-      Herramientas Front-End para Dummies
+      Herramientas de desarrollo Front-End para Dummies
     </title>
     <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
     <meta charset="UTF-8" />
@@ -53,43 +53,40 @@
     </div>
     <div class="row header_seccion row_contenido">
         <div class="col-lg-12 col-sm-12">
-                <img src="img/logo_webpack_blanco.jpg" class="rounded float-right" alt="...">    
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus justo, sollicitudin fringilla arcu id, tincidunt facilisis metus. Mauris sit amet ex eget ipsum commodo pretium. Morbi rhoncus odio ac ante laoreet laoreet. Nam ligula dui, pharetra condimentum posuere ac, pretium eu dolor. Suspendisse aliquet consequat varius. Quisque in pretium turpis. Vestibulum venenatis nunc quam, ut maximus nibh mattis id. Donec metus nunc, tempus congue velit ac, fringilla sodales arcu.
-
-                Carga las dependencias de manera recursiva,
-
-            </p>
-                
-
-                <p>Integer imperdiet fermentum augue nec commodo. Vestibulum id augue in sapien imperdiet malesuada eu sed lectus. Quisque est justo, convallis eu est in, convallis fringilla neque. Nullam vulputate malesuada turpis, sit amet lacinia ante sollicitudin vitae. Vestibulum sit amet purus blandit, sagittis dolor vitae, molestie ligula. Curabitur nec pharetra sapien, suscipit egestas felis. Phasellus ante ipsum, auctor at tortor at, facilisis viverra enim. Quisque pharetra neque eget porta lobortis. Donec semper tortor ac velit cursus consectetur. Fusce pellentesque nisl a enim sagittis vehicula.
-                    Loaders -> permite importar y tratar distintos tipos de archivos (css para preprocesar, javascript, imagentes, html..)
-                        
+                <img src="img/logo_webpack_blanco.jpg" class="rounded float-right" alt="Webpack">
+                <p class="parrafo_intro" >
+                    <span>WebPack</span> es un module bundler, que se podría traducir como 'empaquetador de módulos'. Es decir, una herramienta que nos ayudará en la construcción de  páginas web que se encarga de organizar nuestros ficheros, gestionando las dependencias que existan entre ellos y aplicando las transformaciones necesarias en estos ficheros en función de dónde se está ejecutando nuestra página.
+                </p>    
+                <p class="parrafo_intro" >
+                    La carga de dependencias se hace de manera recursiva y de forma transparente para el desarrollador, de forma que este se puede despreocupar de los cientos o miles de ficheros que aparecen debajo del directorio node_modules. Con sus distintos loaders, webpack permite importar y procesar distintos tipos de archivos (css para preprocesar, javascript, imágenes, html,..) y generar un <span class="span_destacado">output</span>, que son los ficheros que finalmente se enviarán al navegador del cliente que use nuestra web.
                 </p>
-                
-                <p>
-                    
-                    Genera UN OUTPUT
-
-                    Sed facilisis lorem et est pulvinar, eget maximus purus fermentum. Nulla pellentesque diam eu ipsum semper, eget volutpat enim semper. Vestibulum non pharetra massa. Praesent convallis ipsum id finibus malesuada. Sed in augue vel sem semper ornare id non leo. Nullam et interdum mauris. Quisque et elit malesuada, venenatis nibh sed, lacinia dui. Aliquam erat volutpat. Vestibulum tincidunt mauris et neque pharetra fermentum. Fusce laoreet dui pretium sem vehicula, et consectetur ante malesuada. Maecenas quis lacus urna. Phasellus quis finibus erat, ac malesuada eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et feugiat dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                
-                    PLUGINS -> AMPLIAN LA FUNCIONALIDAD DE WEBPACK
+                           
+                <p class="parrafo_intro" >
+                    Aunque el cometido de un module bundler es gestionar y empaquetar los distintas partes (módulos) que componene una aplicación, este tipo de herramientas normalmente hacen muchísimas cosas más, en el caso de WebPack es una de las herramientas más potentes por su amplia funcionalidad y versatilidad y es practicamente un estándar en la construcción del front-end en aplicaciones web:
                 </p>
-                <p>
-                    <b>WebPack</b> es un module bundler, que se podría traducir como 'empaquetador de módulos'. Es decir, una herramienta que nos ayudará en la construcción de  páginas web que se encarga de organizar nuestros ficheros, gestionando las dependencias que existan entre ellos y aplicando las transformaciones necesarias en estos ficheros en función de dónde se está ejecutando nuestra página.
+                <p class="parrafo_intro" >
+                    Entre las 'otras cosas' que podemos hacer con webpack:
                 </p>
-                <p>El hecho es que, aunque el cometido de un module bundler es gestionar y empaquetar los distintas partes (módulos) que componene una aplicación, este tipo de herramientas normalmente hacen muchísimas cosas más, en el caso de WebPack es una de las herramientas más potentes por su amplia funcionalidad y versatilidad y es practicamente un estándar en la construcción del front-end en aplicaciones web:</p>
-                <p>Entre las 'otras cosas' que podemos hacer con webpack:</p>
-                <ul>
-                    <li>Gestiona todos los módulos de nuestra web <b>y sus dependencias</b></li>
-                    <li>Concatenación de código</li>
-                    <li>Minificación, para que el código ocupe menos espacio y pueda viajar más rápido por la red</li>
-                    <li>Ofuscación para, si así lo deseamos, nadie pueda entender nuestro código en el lado del cliente</li>
-                    <li>Convertir formatos de nuestros ficheros. Por ejemplo, si nos es más útil o cómodo, podemos usar TypeScript y posteriormente WebPack se encargará de transformar esos ficheros a código javascript 'puro' (que es el que entienden los navegadores).</li>
+                <ul class="list-group" >
+                    <li class="list-group-item" >Gestiona todos los módulos de nuestra web <b>y sus dependencias</b></li>
+                    <li class="list-group-item" >Concatenación de código</li>
+                    <li class="list-group-item" >Minificación, para que el código ocupe menos espacio y pueda viajar más rápido por la red</li>
+                    <li class="list-group-item" >Ofuscación para, si así lo deseamos, nadie pueda entender nuestro código en el lado del cliente</li>
+                    <li class="list-group-item">Convertir formatos de nuestros ficheros. Por ejemplo, si nos es más útil o cómodo, podemos usar TypeScript y posteriormente WebPack se encargará de transformar esos ficheros a código javascript 'puro' (que es el que entienden los navegadores).</li>
+                    <li class="list-group-item">Uno de los puntos claves de webpack es que es <b>ampliable</b> mediante el uso de plugins</li>
                 </ul>
-                <p>En Webpack</p>
-                <p>Al ofrecer tantas funcionalidades, webpack se está convirtiendo casi en un estándar en el desarrollo web, ya que practicamente no es necesaria ninguna herramienta adicional para realizar todas las tareas necesarias durante el proceso de construcción y despligue. Por ejemplo, usando otros module boundlers como parcel es normal que necesitemos una herramienta adicional para ejecutar tareas (como Gulp)</p>
-                <p>¡No todo va a ser perfecto! Quizás el principal inconveniente que tiene webpack es que puede ser un poco complicado de utilizar al principio. Se podría decir que webpack es más útil en proyectos de tamaño medio, donde los desarrolladores están experimentados. Para proyectos sencillos que no requieran las funcionalidades avanzadas que ofrece webpack quizás sea mejor usar otra alternativa como <a href="parcel.html">Parcel</a></p>
+                <p class="parrafo_intro" >
+                    Al ofrecer tantas funcionalidades, webpack se está convirtiendo casi en un estándar en el desarrollo web, ya que practicamente no es necesaria ninguna herramienta adicional para realizar todas las tareas necesarias durante el proceso de construcción y despligue. Por ejemplo, usando otros module boundlers como parcel es normal que necesitemos una herramienta adicional para ejecutar tareas (como Gulp)</p>
+                    <p class="parrafo_intro" >
+                    ¡No todo va a ser perfecto! Quizás el principal inconveniente que tiene webpack es que puede ser <span class="span_destacado" >un poco complicado de utilizar al principio</span>. Se podría decir que webpack es más útil en proyectos de tamaño medio, donde los desarrolladores están experimentados. Para proyectos sencillos que no requieran las funcionalidades avanzadas que ofrece webpack quizás sea mejor usar otra alternativa como <a href="parcel.html">Parcel</a>
+                </p>
 
+        </div>
+    </div>
+
+    <div class="row header_seccion row_contenido">
+        <div class="col-lg-12 col-sm-12 text-center">
+                <iframe width="80%" height="315" src="https://www.youtube.com/embed/eKaWZ_Vk4PY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -100,12 +97,12 @@
         </div>
         <div>
                 npm install -g webpack 
-        </div>
-    </div>
+                <pre><code class="language-css">p { color: red }</code></pre>
 
-    <div class="row header_seccion row_contenido">
-        <div class="col-lg-12 col-sm-12 text-center">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/SSuycjlgtd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <pre class="language-javascript"><code>
+                        alert('it works!');
+                        </code></pre>
+
         </div>
     </div>
 
