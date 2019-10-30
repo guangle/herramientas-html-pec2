@@ -35,7 +35,7 @@
             class="d-inline-block align-top"
             alt=""
             />
-            Desarrollo Front-End para Dummies
+            Front-End para Dummies
         </a>
     </nav>
     <div id="barra-multicolor"></div>
@@ -67,7 +67,7 @@
                 <p class="parrafo_intro" >
                     Entre las 'otras cosas' que podemos hacer con webpack:
                 </p>
-                <ul class="list-group" >
+                <ul class="list-group mb-3" >
                     <li class="list-group-item" >Gestiona todos los módulos de nuestra web <b>y sus dependencias</b></li>
                     <li class="list-group-item" >Concatenación de código</li>
                     <li class="list-group-item" >Minificación, para que el código ocupe menos espacio y pueda viajar más rápido por la red</li>
@@ -86,7 +86,7 @@
 
     <div class="row header_seccion row_contenido">
         <div class="col-lg-12 col-sm-12 text-center">
-                <iframe width="80%" height="315" src="https://www.youtube.com/embed/eKaWZ_Vk4PY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="80%" height="415" src="https://www.youtube.com/embed/eKaWZ_Vk4PY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
@@ -95,52 +95,78 @@
             <h2>Un poco de código</h2>
             <small>Configuración básica de webpack y primeros pasos</small>
         </div>
-        <div>
-                
-                <pre><code class="language-bash">npm install -g webpack </code></pre>
-                <pre><code class="language-shell">npm install -g webpack </code></pre>
 
-                <pre><code class="language-css">p { color: red }</code></pre>
-
-                <pre class="language-javascript"><code>
-                        alert('it works!');
-                        </code></pre>
-
+        <div class="col-lg-4 col-sm-12 text-center">
+            <pre><code class="language-bash">npm install -g webpack </code></pre>
+            <small class="explicacion_codigo" >Instalar webpack es muy sencillo, basta con ejecutar este comando</small>
         </div>
+
+        <div class="col-lg-8 col-sm-12 text-center">
+            <pre><code class="language-javascript">
+                    const path = require('path');
+
+                    module.exports = {
+                      entry: './src/index.js',
+                      output: {
+                        filename: 'main.js',
+                        path: path.resolve(__dirname, 'dist'),
+                      },
+                    };
+            </code></pre>
+            <small class="explicacion_codigo" >
+                La configuración del module boundler debe escribirse en un fichero llamado webpack.config.js. El punto de entrada a nuestra aplicación web será el fichero index.js (en la carpeta src). Tras procesar todos nuestros ficheros y sus dependencias, webpack generará un fichero de salida llamado main.js, que es el que interpretará nuestro navegador
+            </small>
+        </div>
+
+        
     </div>
 
     <div class="row row_contenido">
-        <div class="col-lg-12 col-sm-12">
-            <h2>¿Qué has aprendido?</h2>
-            <small>Pon a pruebas tus conocimientos con estos test</small>
-        </div>
-
-        <div class="col-lg-4 col-sm-12">
-            <div class="card" style="width: 18rem;">
-                <div class="card-header">
-                    Esta es una pregunta de webpack que puede tener un enunciado que sea un poco largo
-                </div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item respuesta" es-correcta="1" > Respuesta 1 </li>
-                    <li class="list-group-item respuesta" es-correcta="0" > Respuesta 2 </li>
-                    <li class="list-group-item respuesta" es-correcta="0" > Respuesta 3 </li>
-                </ul>
+            <div class="col-lg-12 col-sm-12">
+                <h2>¿Qué has aprendido?</h2>
+                <small>Pon a pruebas tus conocimientos con estos test</small>
             </div>
-        </div>
-
-
-
-        <div>pregunta n</div>
-        <div>pregunta n</div>
-        <div>pregunta n</div>
-        <div>pregunta n</div>
-    </div>
-
     
-
-    Es necesario que cada página contenga un mínimo de 3 párrafos de texto y algún elemento multimedia: imagen, vídeo o un fragmento de código.
-
-    https://www.slideshare.net/FcoJavierNezBerrocoso/webpack-desde-cero
+            <div class="col-lg-4 col-sm-12">
+                <div class="card card_pregunta" style="width: 18rem;">
+                    <div class="card-header">
+                        Webpack únicamente se encarga de manejar las dependencias
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item respuesta" es-correcta="1" > Falso </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > Correcto </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-sm-12">
+                <div class="card card_pregunta" style="width: 18rem;">
+                    <div class="card-header">
+                        La configuración de webpack está en un fichero llamado..
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item respuesta" es-correcta="0" > package.json</li>      
+                        <li class="list-group-item respuesta" es-correcta="1" > webpack.config.js. </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > .webpack.json </li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+            <div class="col-lg-4 col-sm-12">
+                <div class="card card_pregunta" style="width: 18rem;">
+                    <div class="card-header">
+                        ¿En qué atributo de la configuración específicamos el <b>entry point</b>?
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item respuesta" es-correcta="0" > filename </li>
+                        <li class="list-group-item respuesta" es-correcta="1" > entry </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > output </li>
+                    </ul>
+                </div>
+            </div>
+    
+        </div>
 
     <footer class="bg-dark text-center" >
         <div class="info_footer" >

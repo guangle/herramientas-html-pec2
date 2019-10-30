@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
+      <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="/">
         <img
           src="/img/favicon.png"
@@ -35,7 +35,7 @@
           class="d-inline-block align-top"
           alt=""
         />
-        Desarrollo Front-End para Dummies
+        Front-End para Dummies
       </a>
     </nav>
     <div id="barra-multicolor"></div>
@@ -53,27 +53,118 @@
         </ol>
       </nav>
     </div>
+    
     <div class="row header_seccion row_contenido">
-      <div class="col-lg-4 col-sm-12">
-        AQUI UNA FOTO
-      </div>
-      <div class="col-lg-8 col-sm-12">
-        aQUI UN TEXTO <a href="#">Quiero saber más</a>
-      </div>
+        <div class="col-lg-12 col-sm-12">
+                <img src="img/parcel_logo.png" class="rounded float-right" alt="Webpack">
+                <p class="parrafo_intro" >
+                    P <span class="span_destacado" >arcel</span> es un module bundler que destaca principalmente por su sencillez, ya que no requiere casi ninguna configuración para empezar a trabajar con él. Parcel nos da todas las funcionalidades de un module boundler: empaquetado, conversion de formato, servidor de desarrollo, minificación, etc.
+                </p>    
+                <p class="parrafo_intro" >
+                    Una de las características principales de Parcel es que hace su trabajo (empaquetado, minificación, transpilación, etc) <span class="span_destacado" >bastante rápido</span>. Esto nos permitirá ser más ágiles en el desarrollo. Otras características que tiene Parcel y que hacen la vida más fácil al desarrollador son: muestra errores comprensibles, y de una forma amigable, servidor de desarrollo, remplaza los modulos 'en caliente' conforme el programador los va modificando..
+                </p>
+                           
+                <p class="parrafo_intro" >
+                    Si encuentra los ficheros de configuración apropiados, Parcel ejecuta automáticamente transformaciones a nuestro código sin necesidad de instalar o configurar ningún plugin adicional. Ejemplos:
+                </p>
+                <ul class="list-group mb-3" >
+                    <li class="list-group-item" >Configurando <b>.babelrc</b> transpilaremos nuestro javascript con babel</li>
+                    <li class="list-group-item" ><b>.postcssrc</b> nos permitirá usar PostCSS aplicar transformaciones a nuestros css</li>
+                </ul>
+                <p class="parrafo_intro" >
+                  Cuando llegue el momento y nuestra aplicación este lista, Parcel nos permitirá preparar nuestra web para el entorno de producción, aplicando una serie de optimizaciones (configurables) como minificación, concatenación, cacheo, etc.
+                </p>
+                  <p class="parrafo_intro" >
+                    Parcel es una magnifica opción para empezar en el mundo de los module boundlers y usarlo en proyectos sencillos. Si quieres tener un control total sobre la configuración y además disponer de un 'ejecutor' de tareas más completo, quizás sea mejor opción <a href="webpack.html">Webpack</a>
+                </p>
+
+        </div>
     </div>
+
+    <div class="row header_seccion row_contenido">
+        <div class="col-lg-12 col-sm-12 text-center">
+                <iframe width="80%" height="415" src="https://www.youtube.com/embed/4XB6jcyiADY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
     <div class="row row_contenido">
-      <h2>Info parcel..</h2>
-      <div class="col-lg-12 col-sm-12">
-        INFO DE PERCEL, AQUI UN ARTICULO
-      </div>
+        <div class="col-lg-12 col-sm-12">
+            <h2>Un poco de código</h2>
+            <small>Nuestro primer proyecto parcel en 3 sencillos pasos</small>
+        </div>
+        <div class="col-lg-4 col-sm-12 text-center">
+            <pre><code class="language-bash">npm install -g parcel-bundler</code></pre>
+            <small class="explicacion_codigo" >Instalar parcel es muy sencillo, basta con ejecutar este comando</small>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <pre><code class="language-markup">
+                &lt;html>
+                  &lt;body>
+                    &lt;script src="./index.js"></script>
+                  &lt;/body>
+                &lt;/html>
+            </code></pre>
+            <small class="explicacion_codigo" >Punto de entrada de nuestra aplicación</small>
+            <pre><code class="language-javascript">
+                console.log('hola mundo desde parcel..');
+            </code></pre>
+            <small class="explicacion_codigo" >index.js</small>
+        </div>
+        <div class="col-lg-4 col-sm-12 text-center">
+            <pre><code class="language-bash">parcel index.html</code></pre>
+            <small class="explicacion_codigo" >Iniciamos nuestro página en el entorno de desarrollo</small>
+        </div>
     </div>
+    
     <div class="row row_contenido">
-      <h2>¿Qué has aprendido?</h2>
-      <div>pregunta n</div>
-      <div>pregunta n</div>
-      <div>pregunta n</div>
-      <div>pregunta n</div>
+        <div class="col-lg-12 col-sm-12">
+            <h2>¿Qué has aprendido?</h2>
+            <small>Pon a pruebas tus conocimientos con estos test</small>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="card card_pregunta" style="width: 18rem;">
+                <div class="card-header">
+                    Parcel es un module boundler que se caracteriza por
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item respuesta" es-correcta="0" > Contar con configuraciones complicadas </li>
+                    <li class="list-group-item respuesta" es-correcta="1" > Ser muy fácil de configurar </li>
+                    <li class="list-group-item respuesta" es-correcta="0" > Ser muy lento </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="card card_pregunta" style="width: 18rem;">
+                <div class="card-header">
+                    Para aplicar transformaciones a nuestro código javascript, parcel utiliza..
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item respuesta" es-correcta="1" > babel</li>      
+                    <li class="list-group-item respuesta" es-correcta="0" > webpack </li>
+                    <li class="list-group-item respuesta" es-correcta="0" > postcss </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-sm-12">
+            <div class="card card_pregunta" style="width: 18rem;">
+                <div class="card-header">
+                    ¿Con que comando construimos nuestra web para producción?
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item respuesta" es-correcta="0" > parcel dev </li>
+                    <li class="list-group-item respuesta" es-correcta="1" > parcel build </li>
+                    <li class="list-group-item respuesta" es-correcta="0" > parcel prod </li>
+                </ul>
+            </div>
+        </div>
+
     </div>
+
+
     <footer class="bg-dark text-center" >
         <div class="info_footer" >
           <span> Herramientas HTML y CSS, UOC. PEC1 - Juan Jesús Gutiérrez Ramos </spanZ>
