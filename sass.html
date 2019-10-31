@@ -27,94 +27,188 @@
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">
-        <img
-          src="/img/favicon.png"
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt=""
-        />
-        Front-End para Dummies
-      </a>
+        <a class="navbar-brand" href="/">
+            <img
+            src="/img/favicon.png"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+            />
+            Front-End para Dummies
+        </a>
     </nav>
     <div id="barra-multicolor"></div>
     <div class="row row_contenido">
-      <h1>Preprocesadores CSS</h1>
+        <h1>Webpack</h1>
     </div>
-
     <div class="row migas_pan">
         <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Inicio</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Preprocesadores CSS</li>
-          </ol>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="categoria_preprocesadores_css.html">Preprocesadores CSS</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Sass</li>
+            </ol>
         </nav>
-      </div>
-
-      <div class="row row_contenido">
-        <div class="col-lg-5 col-sm-12">
-            <img src="img/css_prepro_2.png" height="100%" width="100%" class="rounded" 
-              alt="Preprocesadores CSS">
+    </div>
+    <div class="row header_seccion row_contenido">
+        <div class="col-lg-12 col-sm-12">
+                <img src="img/logo_sass.png" class="rounded float-right" alt="Webpack">
+                <p class="parrafo_intro" >
+                    Cuando domines <span class="span_destacado">Sass</span> no querrás volver atrás. Todo el que ha vivido de cerca el desarrollo web en los últimos años sabe que CSS3 ha supuesto una verdadera revolución y que cada vez las web lucen mejor y hoy día se pueden hacer cosas increibles pero por otra parte, el nivel de exigencia es cada vez mayor y el código css de nuestros proyectos (que cada vez son más grandes) crece y crece y crece..
+                </p>    
+                <p class="parrafo_intro" >
+                    Sass nació para llevar al mundo de la escritura de estilos la filosofía DRY, esto es, <span class="span_destacado">Don't repeat yourself</span> e intentar por todos los medios que escribamos código repetido, algo que sucecía frecuentemente cuando escribíamos CSS 'normal'. Esto lo consigue añadiendo algunas funcionalidades provinientes del mundo de la 'programación pura' como variables, funciones, imports, etc
+                </p>
+                           
+                <p class="parrafo_intro" >
+                    Las principales características de Sass (por Syntatically Awesome Style Sheets) son:
+                </p>
+                <ul class="list-group mb-3" >
+                    <li class="list-group-item" ><b>Variables</b> para almacenar un valor que repetiremos multiples veces en nuestros estilos</li>
+                    <li class="list-group-item" >Haremos nuestros estilos mucho más fácil de leer con <b>anidamiento o nesting</b></li>
+                    <li class="list-group-item" >Los <b>Mixins</b> son algo parecido a las <b>funciones</b>, que pueden recibir parámetros y aplicarse en distintas partes de nuestro código</li>
+                    <li class="list-group-item" >Podemos partir (modularizar) nuestros ficheros para hacer nuestro proyecto más mantenible</li>
+                    <li class="list-group-item" >¿Tus clases comparten algunas propiedades? Es posible que te venga bien usar la <b>herencia e extends</b></li>
+                </ul>
+                <p class="parrafo_intro" >
+                    Solo se han citado algunas de las características más importantes de la herramienta, Sass es realmente potente y poco a poco su uso se está convirtiendo en un estándar en el desarrollo web moderno. De hecho, los datos de uso reflejan que es la alternativa más usada en cuanto a procesadores css se trata, pero ¡no es en absoluto la única alternativa! Si quieres puedes echarle un ojo a <a href="less.html">Less</a>
+                </p>
         </div>
-        <div class="col-lg-7 col-sm-12">
-          <p class="parrafo_intro" >
-            Los <span class="span_destacado">preproceadores CSS</span> son herramientas muy usadas en el desarrollo front-end cuya finalidad es ayudar al desarrollador a la construcción de ficheros CSS. Se pueden considerar como una ampliación del lenguaje CSS que consigue que el código sea más conciso, fácil de escribir y sobre todo fácil de leer.
-          </p>
-          <p class="parrafo_intro" >
-              Estas herramientas de preprocesamiento, 'amplian' el lenguaje css para que podamos usar características que no están inicialmente incluidas en el lenguaje: variables, funciones, anidamientos, etc. Aunque estas herramientas incluyan características nuevas, al final del procesamiento el resultado que obtendremos será siempre un CSS estándar perfectamente entendible por los navegadores
-              <a href="#">Quiero saber más</a>
-          </p>
+    </div>
+
+    <div class="row header_seccion row_contenido">
+        <div class="col-lg-12 col-sm-12 text-center">
+                <iframe width="80%" height="415" src="https://www.youtube.com/embed/mHp2nr2kErs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-      </div>
+    </div>
 
-      <div class="row row_contenido">
-          <div class="col-lg-12 col-sm-12">
-              <p class="parrafo_intro" >
-              La principal ventaja que tenemos de usar este tipo de herramientas es que conseguimos un <span class="span_destacado" >un código más organizado</span>, mucho más fácil de escribir y de leer para otros desarrolladores del proyecto. Por <span class="span_destacado">ejemplo:</span> si utilizamos un color verde en 47 elementos de nuestra hoja de estilos, con css 'normal' deberíamos escribir el código hexadecimal del verde en todas las clases y selectores donde queremos usar el color. Si de repente necesitamos cambiar la tonalidad de verde por otro código exadecimal.. <b>¡Tendremos que hacer 47 cambios en el (o los) fichero css(s)!</b> Esto únicamenete para una propiedad.. Si por el contrario definimos nuestro color verde en una variable, tenemos un punto único donde cambiar la tonalidad y el cambio se verá aplicado a todos los sitios donde se use esa variable.
-              </p>
-          </div>
-      </div>
+    <div class="row row_contenido">
+        <div class="col-lg-12 col-sm-12">
+            <h2>Un poco de código</h2>
+            <small>Veremos alguna de las funcionalidades que ofrece Sass</small>
+        </div>
 
-      <div class="row row_contenido">
-          <div class="col-lg-12 col-sm-12">
-              <p class="parrafo_intro" >
-            Los procesadores css suelen ofrecer tambien mecánismos de generación/inclusión de módulos que nos facilitan mucho la reutilización del código CSS que vayamos creando. Como  desventaja, se podría decir que la utilización de este tipo de frameworks supone un incremento de la complejidad, ya que los desarrolladores deben aprender usar el lenguaje y la herramienta y además se incrementa un poco el tiempo de construcción, ya que todos los ficheros scss, less deben ser procesados antes de servirse al navegador, que únicamente entiende css en lo referente a estilos.
-            </p> 
-          </div>
-      </div>
+        <div class="col-lg-4 col-sm-12 text-center">
+            <h4>Variables</h4>
+            <pre><code class="language-css">
+              /* Definicion de variables */
+              $color1: rgba(130, 35, 178, 1);
+              $color2: rgba(217, 3, 104, 1);
+              /* Uso de las variables declaradas */
+              p::first-letter {
+                font-size: 250%;
+                color: $color1;
+                font-weight: bold;
+              }
+            </code></pre>
+            <small class="explicacion_codigo" >
+              Declaración y uso de variables
+            </small>
+        </div>
 
-      <div class="row row_contenido">
-          <h2>Listado</h2>
-          <div class="col-lg-12 col-sm-12">
-              <small>Existen varias alternativas de preprocesadores CSS, siendo las más conocidas: sass, less y stylus </small>
-            <ul class="list-group ul_categoria" >
-              <li class="list-group-item" >
-                  <i class="fab fa-sass"></i> 
-                  <span class="span_li" >SASS</span> 
-                  <span class="span_li_descripcion"> La elección por parte de twitter de usarlo para su framework bootstrap lo ha convertido casi en un estándar </span>
-                  <a href="sass.html">Aprender Sass</a>
-              </li>
-              <li class="list-group-item" >
-                  <i class="fab fa-less"></i> 
-                  <span class="span_li" >Less</span> 
-                  <span class="span_li_descripcion"> Potente y casi sin configuración.. la herramienta perfecta para empezar con module boundlers </span>
-                  <a href="less.html">Aprender Parcel</a>
-              </li>
-            </ul>
-          </div>
+        <div class="col-lg-4 col-sm-12 text-center">
+            <h4>Anidamiento</h4>
+            <pre><code class="language-css">
+                .contenido {
+                  h1 {
+                    color: $color1;
+                  }
+                }
+            </code></pre>
+            <small class="explicacion_codigo" >
+              El nesting nos permite que el código sea más legible, resulta 'intuitivo' ver que únicamente aplicamos el color a los h1 que estén dentro de elementos con la clase 'contenido'
+            </small>
+        </div>
+
+        <div class="col-lg-4 col-sm-12 text-center">
+            <h4>Mixins</h4>
+            <pre><code class="language-css">
+                @mixin caja($tam, $color) {
+                  width: $tam;
+                  height: $tam;
+                  background-color: $color;
+                }
+                
+                .caja-grande-roja {
+                  @include caja(200px, rgb(255,0,0));
+                  /* + atributos adicionales..*/
+                }
+                
+                .caja-peque-azul {
+                  @include caja(30px, rgb(0,0,255));
+                  /* + atributos adicionales..*/
+                }
+            </code></pre>
+            <small class="explicacion_codigo" >
+              Los mixins nos permite reutilizar mucho código css, construyendo 'funciones' que apliquen ciertos estilos comunes a elementos
+            </small>
+        </div>
+
+
+    </div>
+
+    <div class="row row_contenido">
+            <div class="col-lg-12 col-sm-12">
+                <h2>¿Qué has aprendido?</h2>
+                <small>Pon a pruebas tus conocimientos con estos test</small>
+            </div>
+    
+            <div class="col-lg-4 col-sm-12">
+                <div class="card card_pregunta" style="width: 18rem;">
+                    <div class="card-header">
+                        Una vez se procesen los ficheros con sass, se obtendra un fichero del tipo..
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item respuesta" es-correcta="1" > .css </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > .scss </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > .sass </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 col-sm-12">
+                <div class="card card_pregunta" style="width: 18rem;">
+                    <div class="card-header">
+                        ¿Cómo definimos en Sass una variable con nombre color y valor #abcabc?
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item respuesta" es-correcta="0" > %color: #abcabc;  </li>      
+                        <li class="list-group-item respuesta" es-correcta="1" > $color: #abcabc; </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > $color : %#abcabc;%; </li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+            <div class="col-lg-4 col-sm-12">
+                <div class="card card_pregunta" style="width: 18rem;">
+                    <div class="card-header">
+                        Los mixins nos permiten..
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item respuesta" es-correcta="0" > Redondear bordes a los elementos </li>
+                        <li class="list-group-item respuesta" es-correcta="1" > Reutilizar código </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > Modularizar nuestros ficheros scss </li>
+                    </ul>
+                </div>
+            </div>
+    
         </div>
 
     <footer class="bg-dark text-center" >
         <div class="info_footer" >
-          <span> Herramientas HTML y CSS, UOC. PEC1 - Juan Jesús Gutiérrez Ramos </spanZ>
+            <span> Herramientas HTML y CSS, UOC. PEC1 - Juan Jesús Gutiérrez Ramos </spanZ>
         </div>
         <div class="info_footer contenedor_rrss" >
             <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
             <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
             <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
         </div>
-      </footer>
-      <script src="./index.js"></script>
-  </body>
-</html>
+        </footer>
+    <script src="./index.js"></script>
+
+    </body>
+  </html>
+
+
