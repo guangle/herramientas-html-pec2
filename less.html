@@ -58,90 +58,86 @@
                     Less sigue exactamente <span class="span_destacado">la misma filosofía que Sass</span>, se escriben los ficheros de estilos en ficheros con un formato propio, donde contaremos con funcionalides añadidas al css estándar y tras un trabajo de procesamiento, obtendremos un único fichero con formato .css que es el que serviremos y sabrá interpretar nuestro navegador.
                 </p>    
                 <p class="parrafo_intro" >
-                    En este caso, los ficheros que procesemos con less deberán tener la extensión .less y tendremos disponibles una serie de utilidades que nos facilitarán mucho la labor de aplcar los estilos a una web: anidamento, variables, operadores, etc. Además, incluye VOY POR AQUI..
+                    En este caso, los ficheros que procesemos con less deberán tener la extensión .less y tendremos disponibles una serie de utilidades que nos facilitarán mucho la labor de aplcar los estilos a una web: anidamento, variables, operadores, etc. Una de las características de less que más llama la atención es que permite que la compilación se haga, mediante javascript, en el navegador del cliente, aunque obviamente esta opción penaliza el rendimiento de la web.
                 </p>
                            
                 <p class="parrafo_intro" >
-                    Las principales características de Sass (por Syntatically Awesome Style Sheets) son:
+                    Las principales características de Less son:
                 </p>
                 <ul class="list-group mb-3" >
                     <li class="list-group-item" ><b>Variables</b> para almacenar un valor que repetiremos multiples veces en nuestros estilos</li>
-                    <li class="list-group-item" >Haremos nuestros estilos mucho más fácil de leer con <b>anidamiento o nesting</b></li>
+                    <li class="list-group-item" ><b>Anidamiento de propiedades</b>, con lo que conseguimos un código más organizado y fácil de leer</li>
                     <li class="list-group-item" >Los <b>Mixins</b> son algo parecido a las <b>funciones</b>, que pueden recibir parámetros y aplicarse en distintas partes de nuestro código</li>
-                    <li class="list-group-item" >Podemos partir (modularizar) nuestros ficheros para hacer nuestro proyecto más mantenible</li>
-                    <li class="list-group-item" >¿Tus clases comparten algunas propiedades? Es posible que te venga bien usar la <b>herencia e extends</b></li>
+                    <li class="list-group-item" >Podemos usar operadores (+,-,*,/) para el cálculo de nuestros anchos, márgenes, paddings.. ¡incluso podemos operar con colores!</li>
+                    <li class="list-group-item" >Podemos importar otros ficheros (less o css) usando la palabra reservada <b>@import</b></li>
                 </ul>
                 <p class="parrafo_intro" >
-                    Solo se han citado algunas de las características más importantes de la herramienta, Sass es realmente potente y poco a poco su uso se está convirtiendo en un estándar en el desarrollo web moderno. De hecho, los datos de uso reflejan que es la alternativa más usada en cuanto a procesadores css se trata, pero ¡no es en absoluto la única alternativa! Si quieres puedes echarle un ojo a <a href="less.html">Less</a>
+                    Tanto <a href="sass.html">Sass</a> como Less ofrecen características muy similares así que el uso de una u otra herramienta depende de las preferencias de cada desarrollador porque a nivel de funcionalidad son prácticamente equivalentes. Eso sí, parece que <span class="span_destacado"> Sass es algo más popular</span> en el mundo del desarrollo, luego nos será mas sencillo encontrar documentación, tutoriales y videos.
                 </p>
         </div>
     </div>
 
     <div class="row header_seccion row_contenido">
         <div class="col-lg-12 col-sm-12 text-center">
-                <iframe width="80%" height="415" src="https://www.youtube.com/embed/mHp2nr2kErs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="80%" height="415" src="https://www.youtube.com/embed/YD91G8DdUsw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 
     <div class="row row_contenido">
         <div class="col-lg-12 col-sm-12">
             <h2>Un poco de código</h2>
-            <small>Veremos alguna de las funcionalidades que ofrece Sass</small>
+            <small>Veremos alguna de las funcionalidades que ofrece Less</small>
         </div>
 
         <div class="col-lg-4 col-sm-12 text-center">
             <h4>Variables</h4>
             <pre><code class="language-css">
               /* Definicion de variables */
-              $color1: rgba(130, 35, 178, 1);
-              $color2: rgba(217, 3, 104, 1);
-              /* Uso de las variables declaradas */
-              p::first-letter {
-                font-size: 250%;
-                color: $color1;
-                font-weight: bold;
-              }
+              @color1: rgba(130, 35, 178, 1);
+              @ancho1: 10px;
             </code></pre>
             <small class="explicacion_codigo" >
               Declaración y uso de variables
             </small>
         </div>
 
-        <div class="col-lg-4 col-sm-12 text-center">
+        <div class="col-lg-4 col-sm-12 text-left">
             <h4>Anidamiento</h4>
             <pre><code class="language-css">
-                .contenido {
-                  h1 {
-                    color: $color1;
-                  }
+                /* Código Css */
+                #cabecera {
+                    color: black;
+                }
+                #cabecera .navigation {
+                    font-size: 12px;
+                }
+                #cabecera .logo {
+                    width: 300px;
+                }
+                /* Código equivalente en less */
+                #cabecera {
+                    color: black;
+                    .navigation {
+                        font-size: 12px;
+                    }
+                    .logo {
+                        width: 300px;
+                    }
                 }
             </code></pre>
             <small class="explicacion_codigo" >
-              El nesting nos permite que el código sea más legible, resulta 'intuitivo' ver que únicamente aplicamos el color a los h1 que estén dentro de elementos con la clase 'contenido'
+              En este caso, no ahorramos muchas líneas pero el código esta mejor organizado y es mucho más 'intuitivo', ya que a 'simple vista' se aprecian que navigation y logo solo existirán dentro de un elemento conn id=cabecera
             </small>
         </div>
 
         <div class="col-lg-4 col-sm-12 text-center">
             <h4>Mixins</h4>
-            <pre><code class="language-css">
-                @mixin caja($tam, $color) {
-                  width: $tam;
-                  height: $tam;
-                  background-color: $color;
-                }
-                
-                .caja-grande-roja {
-                  @include caja(200px, rgb(255,0,0));
-                  /* + atributos adicionales..*/
-                }
-                
-                .caja-peque-azul {
-                  @include caja(30px, rgb(0,0,255));
-                  /* + atributos adicionales..*/
-                }
+            <pre><code class="language-less">
+                    @padding_base: 5%;
+                    @padding_1: @padding_base * 1,15;
             </code></pre>
             <small class="explicacion_codigo" >
-              Los mixins nos permite reutilizar mucho código css, construyendo 'funciones' que apliquen ciertos estilos comunes a elementos
+              Los operadores aritméticos nos pueden ser útiles para definir tamaños en base a una referencia que tengamos declarada en nuestra aplicación
             </small>
         </div>
 
@@ -157,12 +153,12 @@
             <div class="col-lg-4 col-sm-12">
                 <div class="card card_pregunta" style="width: 18rem;">
                     <div class="card-header">
-                        Una vez se procesen los ficheros con sass, se obtendra un fichero del tipo..
+                        Como la herramienta está basada en javascript, con Less podríamos no procesar los ficheros .less, sino manarlos al cliente y que se transformen en el navegador en css
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item respuesta" es-correcta="1" > .css </li>
-                        <li class="list-group-item respuesta" es-correcta="0" > .scss </li>
-                        <li class="list-group-item respuesta" es-correcta="0" > .sass </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > Falso, eso no se puede hacer </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > Verdadero, es la forma recomendable de trabajar con less </li>
+                        <li class="list-group-item respuesta" es-correcta="1" > Verdadero, pero penalizaríamos el rendimiento de la página </li>
                     </ul>
                 </div>
             </div>
@@ -170,12 +166,12 @@
             <div class="col-lg-4 col-sm-12">
                 <div class="card card_pregunta" style="width: 18rem;">
                     <div class="card-header">
-                        ¿Cómo definimos en Sass una variable con nombre color y valor #abcabc?
+                        ¿Cómo definimos en Less una variable con nombre color y valor #abcabc?
                     </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item respuesta" es-correcta="0" > %color: #abcabc;  </li>      
-                        <li class="list-group-item respuesta" es-correcta="1" > $color: #abcabc; </li>
-                        <li class="list-group-item respuesta" es-correcta="0" > $color : %#abcabc;%; </li>
+                        <li class="list-group-item respuesta" es-correcta="1" > @color1: #abcabc; </li>
+                        <li class="list-group-item respuesta" es-correcta="0" > $color : #abcabc; </li>
                     </ul>
                 </div>
             </div>
@@ -184,12 +180,12 @@
             <div class="col-lg-4 col-sm-12">
                 <div class="card card_pregunta" style="width: 18rem;">
                     <div class="card-header">
-                        Los mixins nos permiten..
+                        El nesting o anidamiento tiene como ventaja..
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item respuesta" es-correcta="0" > Redondear bordes a los elementos </li>
-                        <li class="list-group-item respuesta" es-correcta="1" > Reutilizar código </li>
-                        <li class="list-group-item respuesta" es-correcta="0" > Modularizar nuestros ficheros scssAd </li>
+                        <li class="list-group-item respuesta" es-correcta="1" > Tener el código más organizado y hacerlo más fácil de leer</li>
+                        <li class="list-group-item respuesta" es-correcta="0" > Ofuscar el código, para que nadie pueda copiarnos</li>
+                        <li class="list-group-item respuesta" es-correcta="0" > Reduce el tiempo de procesado del fichero .less </li>
                     </ul>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 {
   "plugins": [
     ["prismjs", {
-        "languages": ["javascript", "css", "markup", "bash", "shell", "html", "sass"],
+        "languages": ["javascript", "css", "markup", "bash", "shell", "html", "sass", "less"],
         "plugins": ["line-numbers"],
         "theme": "okaidia",
         "css": true
