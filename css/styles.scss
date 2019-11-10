@@ -110,20 +110,20 @@ footer {
   justify-content: center;
   align-items: stretch;
   align-content: center;
-}
 
-.contenedor_rrss i {
-  color: $color2;
-  padding: 0px 8px;
+  i {
+    color: $color2;
+    padding: 0px 8px;
+  }
 }
 
 .row_contenido {
   padding: 10px 30px;
   margin-top: 20px;
-}
 
-.row_contenido h2 {
-  display: block;
+  h2 {
+    display: block;
+  }
 }
 
 .migas_pan,
@@ -159,10 +159,10 @@ p::first-letter {
 
 ul.ul_categoria {
   list-style-type: none;
-}
 
-ul.ul_categoria > li {
-  margin: 1em 0;
+  li {
+    margin: 1em 0;
+  }
 }
 
 .span_li {
