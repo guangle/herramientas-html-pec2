@@ -28,13 +28,12 @@
   <body>
       <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand" href="/">
-        <img
-          src="/img/favicon.png"
-          width="30"
-          height="30"
-          class="d-inline-block align-top"
-          alt=""
-        />
+        <picture style="width: 64px; height: 64px;" >
+          <source srcset="img/logo_s.png" media="(max-width: 400px)" />
+          <source srcset="img/logo_m.png" media="(max-width: 800px)" />
+          <source srcset="img/logo_l.png" media="(max-width: 1200px)" />
+          <img src="img/logo_m.png" width="64" height="64" alt=" Front para dummies ">
+         </picture>
         Front-End para Dummies
       </a>
     </nav>
