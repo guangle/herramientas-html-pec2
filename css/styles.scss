@@ -99,7 +99,6 @@ footer {
      60% 16%, 62% 8%, 65% 2%, 68% 2%, 69% 12%, 71% 19%, 74% 24%, 77% 27%, 80% 30%, 83% 30%, 85% 25%, 
      88% 19%, 91% 12%, 93% 18%, 95% 26%, 97% 22%, 98% 13%, 100% 1%, 100% 100%);
   */  
-
   margin-top: 20px;
   padding-top: 65px;
 }
@@ -139,6 +138,11 @@ footer {
   h2 {
     display: block;
   }
+}
+
+.row_img_portada {
+  padding: 0px;
+  margin-top: 0px;
 }
 
 .migas_pan,

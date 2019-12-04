@@ -28,13 +28,12 @@
   <body>
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="/">
-            <img
-            src="/img/favicon.png"
-            width="30"
-            height="30"
-            class="d-inline-block align-top"
-            alt=""
-            />
+            <picture style="width: 64px; height: 64px;" >
+                <source srcset="img/logo_s.png" media="(max-width: 400px)" />
+                <source srcset="img/logo_m.png" media="(max-width: 800px)" />
+                <source srcset="img/logo_l.png" media="(max-width: 1200px)" />
+                <img src="img/logo_m.png" width="64" height="64" alt=" Front para dummies ">
+               </picture>
             Front-End para Dummies
         </a>
     </nav>
@@ -50,6 +49,14 @@
                 <li class="breadcrumb-item active" aria-current="page">Sass</li>
             </ol>
         </nav>
+    </div>
+    <div class="row row_contenido row_img_portada">
+        <picture style="width: 100%; height: auto;" >
+            <source srcset="img/sass_portada_s.png" media="(max-width: 400px)" />
+            <source srcset="img/sass_portada_m.png" media="(max-width: 800px)" />
+            <source srcset="img/sass_portada_l.png" media="(min-width: 801px)" />
+            <img src="img/sass_portada_l.png" width="100%" height="auto" alt=" Aprende webpack ">
+        </picture>
     </div>
     <div class="row header_seccion row_contenido">
         <div class="col-lg-12 col-sm-12">
