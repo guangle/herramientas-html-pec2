@@ -297,6 +297,30 @@ footer {
   }
 }
 
+/*5. En las tarjetas, añadimos una sombra que cuyo difuminado vaya oscilando */
+.card {
+  box-shadow: 10px 10px 30px -8px $color5;
+  animation: moverSombra 8s linear infinite;
+}
+
+@keyframes moverSombra {
+  0% {
+    box-shadow: 10px 10px 30px -8px $color5;
+  }
+  25% {
+    box-shadow: -10px 10px 30px -8px $color1;
+  }
+  50% {
+    box-shadow: -10px -10px 30px -8px $color2;
+  }
+  75% {
+    box-shadow: 10px -10px 30px -8px $color3;
+  }
+  100% {
+    box-shadow: 10px 10px 30px -8px $color5;
+  }
+}
+
 /* Animaciones css generadas en la pagina http://animista.net */
 
 .tracking-in-expand {
