@@ -131,9 +131,10 @@ footer {
   align-items: stretch;
   align-content: center;
 
-  i {
+  a {
     color: $color2;
     padding: 0px 8px;
+    text-decoration: none;
   }
 }
 
