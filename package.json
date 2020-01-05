@@ -38,13 +38,14 @@
   },
   "homepage": "https://github.com/guangle/herramientas-html-pec1#readme",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.11.2",
     "@babel/core": "^7.6.4",
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "babel-plugin-prismjs": "^1.1.1",
     "bootstrap": "^4.3.1",
     "css": "^2.2.4",
     "css-loader": "^3.2.0",
     "jquery": "^3.4.1",
+    "parcel-plugin-purifycss": "^1.0.5",
     "popper.js": "^1.15.0",
     "prismjs": "^1.17.1"
   }
