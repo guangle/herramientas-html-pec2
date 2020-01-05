@@ -1,11 +1,43 @@
-
 import Prism from "prismjs";
 Prism.highlightAll();
 console.log(Prism);
 
-
 console.log("Herramientas front-end para dummies:");
 console.log("Inicio de la aplicacion.");
+
+//Carga asincrona de la fuente de google font usando webfontloader
+//https://www.npmjs.com/package/webfontloader
+var WebFont = require("webfontloader");
+
+WebFont.load({
+  google: {
+    families: ["Open Sans", "Raleway"]
+  }
+});
+//carga asincrona de la fuente
+(function(d) {
+  var wf = d.createElement("script"),
+    s = d.scripts[0];
+  wf.src = "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
+  wf.async = true;
+  s.parentNode.insertBefore(wf, s);
+})(document);
+
+/*
+WebFontConfig = {
+  google: { families: ["Roboto"] }
+};
+(function() {
+  var wf = document.createElement("script");
+  wf.src =
+    ("https:" == document.location.protocol ? "https" : "http") +
+    "://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
+  wf.type = "text/javascript";
+  wf.async = "true";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+*/
 
 /** Funcion que se ejecuta en los diferentes test que hay en la web,
  * se encarga, en funcion de si la respuesta es correcta o no, mostrar
