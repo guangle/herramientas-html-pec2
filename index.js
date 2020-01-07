@@ -1,6 +1,8 @@
 import Prism from "prismjs";
 
-var lozad = require("lozad");
+import lozad from "lozad";
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
 
 Prism.highlightAll();
 console.log(Prism);

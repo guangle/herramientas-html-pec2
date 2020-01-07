@@ -48,6 +48,7 @@
     "jquery": "^3.4.1",
     "lazysizes": "^5.2.0",
     "lozad": "^1.14.0",
+    "parcel-plugin-lazy": "0.0.4",
     "parcel-plugin-purifycss": "^1.0.5",
     "popper.js": "^1.15.0",
     "prismjs": "^1.17.1",
