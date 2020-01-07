@@ -1,5 +1,6 @@
 import Prism from "prismjs";
-import "lazysizes";
+
+var lozad = require("lozad");
 
 Prism.highlightAll();
 console.log(Prism);

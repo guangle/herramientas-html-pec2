@@ -11,6 +11,8 @@ module.exports = {
     "tag",
     "language-bash",
     "string",
-    "punctuation"
+    "punctuation",
+    "attr-name",
+    "attr-value"
   ]
 };
