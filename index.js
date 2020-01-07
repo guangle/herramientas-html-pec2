@@ -1,4 +1,6 @@
 import Prism from "prismjs";
+import "lazysizes";
+
 Prism.highlightAll();
 console.log(Prism);
 
@@ -22,22 +24,6 @@ WebFont.load({
   wf.async = true;
   s.parentNode.insertBefore(wf, s);
 })(document);
-
-/*
-WebFontConfig = {
-  google: { families: ["Roboto"] }
-};
-(function() {
-  var wf = document.createElement("script");
-  wf.src =
-    ("https:" == document.location.protocol ? "https" : "http") +
-    "://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js";
-  wf.type = "text/javascript";
-  wf.async = "true";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(wf, s);
-})();
-*/
 
 /** Funcion que se ejecuta en los diferentes test que hay en la web,
  * se encarga, en funcion de si la respuesta es correcta o no, mostrar

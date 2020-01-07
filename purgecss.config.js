@@ -6,6 +6,11 @@ module.exports = {
     "bg-success",
     "bg-danger",
     "respuesta",
-    "font-weight-bold"
+    "font-weight-bold",
+    "token",
+    "tag",
+    "language-bash",
+    "string",
+    "punctuation"
   ]
 };
