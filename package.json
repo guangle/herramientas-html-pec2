@@ -46,7 +46,7 @@
     "css": "^2.2.4",
     "css-loader": "^3.2.0",
     "jquery": "^3.4.1",
-    "lazysizes": "^5.2.0",
+    "lazysizes": "^5.2.1",
     "lozad": "^1.14.0",
     "parcel-plugin-lazy": "0.0.4",
     "parcel-plugin-purifycss": "^1.0.5",
