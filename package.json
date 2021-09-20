@@ -51,7 +51,7 @@
     "parcel-plugin-lazy": "0.0.4",
     "parcel-plugin-purifycss": "^1.0.5",
     "popper.js": "^1.15.0",
-    "prismjs": "^1.17.1",
+    "prismjs": "^1.25.0",
     "webfontloader": "^1.6.28"
   }
 }
